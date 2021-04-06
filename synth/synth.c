@@ -122,8 +122,7 @@ UpdatePhase(f32 *phase_ratio, f32 *phase_dt, f32 freq, f32 freq_mod)
     *phase_ratio = *phase_ratio + *phase_dt;
     if (*phase_ratio < 0.0f)
         *phase_ratio += 1.0f;
-    /
-        if (*phase_ratio >= 1.0f)
+    if (*phase_ratio >= 1.0f)
         *phase_ratio -= 1.0f;
 }
 
@@ -604,7 +603,7 @@ main(i32 argc, char **argv)
     InitAudioDevice();
     midi_keys.count = ArrayCount(midi_keys.data);
     midi_input_handle = SynthMidiInit(0, &midi_keys);
-    GuiLoadStyle(".\\raygui\\styles\\jungle\\jungle.rgs");
+    GuiLoadStyle(".\\styles\\jungle\\jungle.rgs");
     
     u32 sample_rate = SAMPLE_RATE;
     SetAudioStreamBufferSizeDefault(STREAM_BUFFER_SIZE);
