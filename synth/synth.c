@@ -9,7 +9,7 @@
 
 #define SYNTH_SLOW 1 // run assertions.
 #define SCREEN_WIDTH 1024
-#define SCREEN_HEIGHT 368
+#define SCREEN_HEIGHT 768
 #define TARGET_FPS 60
 #define SAMPLE_RATE 44100
 #define SAMPLE_DURATION (1.0f / SAMPLE_RATE)
@@ -122,7 +122,8 @@ UpdatePhase(f32 *phase_ratio, f32 *phase_dt, f32 freq, f32 freq_mod)
     *phase_ratio = *phase_ratio + *phase_dt;
     if (*phase_ratio < 0.0f)
         *phase_ratio += 1.0f;
-    if (*phase_ratio >= 1.0f)
+    /
+        if (*phase_ratio >= 1.0f)
         *phase_ratio -= 1.0f;
 }
 
