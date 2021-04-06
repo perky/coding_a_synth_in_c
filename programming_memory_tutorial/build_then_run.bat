@@ -1,0 +1,1 @@
+tcc -o pmt.exe main.c -Iinclude -lraylib -lmsvcrt -lraylib -lopengl32 -lgdi32 -lkernel32 -lshell32 -luser32 -lwinmm -Wl,-subsystem=gui -std=c99 -g -run

@@ -1,0 +1,21 @@
+###############################
+### MAKE A SYNTHESIZER IN C ###
+### EPISODE 9               ###
+###############################
+
+
+=== TODO ===
+== fix bugs with UI and modulation seems inconsistent?
+== better UI for setting up modulators.
+== Amplitude modulation.
+== Pulse Width modulation.
+
+
+=== TOOLS ===
+== 4coder (with customizations).
+== Raylib [https://www.raylib.com/].
+== Visual Studio 2019 compiler.
+== Windows 10.
+
+
+Find me on twitter: @locogameluke

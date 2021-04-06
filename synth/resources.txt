@@ -1,0 +1,38 @@
+=== RESOURCES ===
+== Raygui
+= https://github.com/raysan5/raygui
+
+== MIDI input (windows)
+= https://docs.microsoft.com/en-us/windows/win32/multimedia/midi-reference
+
+== MIDI input example (windows
+= https://gist.github.com/yoggy/1485181
+
+== Building a Numerically Controlled Oscillator
+= https://zipcpu.com/dsp/2017/12/09/nco.html
+
+== http://www.slack.net/~ant/bl-synth/ (Offline, use wayback machine)
+
+== Generating PolyBLEP Waveforms
+= http://www.martin-finke.de/blog/articles/audio-plugins-018-polyblep-oscillator/
+
+== Creating Threads
+= https://docs.microsoft.com/en-us/windows/win32/procthread/creating-threads
+
+== STB (useful collection of things)
+= https://github.com/nothings/stb/blob/master/stb.h
+
+== Cross-platform thread header.
+= https://github.com/mattiasgustavsson/newpixie/blob/main/source/pixie/thread.h
+
+== PADsynth
+= https://zynaddsubfx.sourceforge.io/doc/PADsynth/PADsynth.htm
+
+
+
+== Categories for Fourier Transform:
+= Complex numbers.
+= Euler formula/Eulers identity.
+= Roots of unity.
+= Signal processing.
+= https://ccrma.stanford.edu/~jos/log/Mathematics_DFT.html

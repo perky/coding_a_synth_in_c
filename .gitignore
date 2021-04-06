@@ -1,0 +1,4 @@
+*.pdb
+*.obj
+*.o
+*/.vscode

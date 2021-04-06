@@ -1,0 +1,13 @@
+##################################
+### HOW TO PROGRAM A COMPUTER  ###
+### SIDEBAR 1                  ###
+##################################
+
+Luke Perkin.
+Freelance Technical Designer in the games industry.
+
+== Understand Proccesors.
+== Understand Memory.
+== Understand Instructions.
+
+Find me on twitter: @locogameluke

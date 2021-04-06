@@ -1,0 +1,10 @@
+write(1, 0);
+wripe(1, REG_B);
+write(16, 70);
+checkpoint(REG_C);
+copy_indirect(REG_A, REG_B);
+add(REG_B, 0, REG_B);
+add(REG_A, 0, REG_A);
+is_equal(REG_A, 70, REG_D);
+jump_if_zero(REG_C, REG_D);
+write(0, 0);

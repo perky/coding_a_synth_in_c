@@ -1,0 +1,32 @@
+label(ONE, 70);
+label(TAB, 71);
+label(START, 3);
+label(END, 30);
+write_region(0, END, 71);
+write(9, TAB);
+print_numbers(START, END);
+print_characters(TAB, TAB);
+write(0, 1); // setup sort
+write(0, 2);
+write(START, REG_A);
+write(END, REG_B);
+write(1, ONE);
+checkpoint(SORT); // sort
+copy_indirect_to_cell(REG_A, 1);
+add(REG_A, ONE, REG_A);
+copy_indirect_to_cell(REG_A, 2);
+is_less_than(1, 2, REG_C);
+jump_if_above_zero(AHEAD, REG_C);
+copy_cell_to_indirect(1, REG_A);
+subtract(REG_A, ONE, REG_A);
+copy_cell_to_indirect(2, REG_A);
+add(REG_A, ONE, REG_A);
+checkpoint(AHEAD);
+is_equal(REG_A, REG_B, REG_D);
+jump_if_zero(SORT, REG_D);
+subtract(REG_B, ONE, REG_B);
+write(START, REG_A);
+is_equal(REG_B, REG_A, REG_D);
+jump_if_zero(SORT, REG_D);
+print_numbers(START, END);
+print_characters(TAB, TAB);

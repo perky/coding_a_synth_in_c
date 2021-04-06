@@ -1,0 +1,62 @@
+version(1);
+
+project_name = "c_raylib";
+
+patterns =
+{
+    "*.c",
+    "*.cpp",
+    "*.jai",
+    "*.odin",
+    "*.zig",
+    "*.h",
+    "*.inc",
+    "*.bat",
+    "*.sh",
+    "*.4coder",
+    "*.txt",
+};
+
+blacklist_patterns =
+{
+    ".*",
+};
+
+load_paths =
+{
+    {
+        { {"."}, .recursive = true, .relative = true }, .os = "win"
+    },
+};
+
+command_list =
+{
+    {
+        .name = "build",
+        .out = "*compilation*",
+        .footer_panel = true,
+        .save_dirty_files = true,
+        .cursor_at_end = false,
+        .cmd =
+        {
+            { "build.bat", .os = "win" },
+            { "echo Linux build command not implemented for 4coder project.", .os = "linux" },
+        },
+    },
+    
+    {
+        .name = "run",
+        .out = "*compilation*",
+        .footer_panel = true,
+        .save_dirty_files = true,
+        .cursor_at_end = false,
+        .cmd =
+        {
+            { "run.bat", .os = "win" },
+            { "echo Linux run command not implemented for 4coder project.", .os = "linux" },
+        },
+    }
+};
+
+fkey_command[1] = "build";
+fkey_command[2] = "run";
